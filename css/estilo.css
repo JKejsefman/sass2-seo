@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: black;
+  color: white; }
+
+header {
+  background-color: blue;
+  /*fin h1*/
+  /*fin nav*/ }
+  header h1 {
+    text-align: center; }
+  header nav {
+    background-color: gray;
+    /*fin ul*/ }
+    header nav ul {
+      list-style: none;
+      /* barra_navegacion{*/
+      display: flex;
+      flex-direction: flex-row;
+      justify-content: flex-end;
+      /*fin li*/
+      /* }/*fin barra nav*/ }
+      header nav ul li {
+        padding: 15px;
+        display: inline-block;
+        /*flex_hijos{*/
+        font-size: 1.5rem;
+        background-color: crimson;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 10px;
+        /*fin a*/
+        /*   } /*fin flex*/ }
+        header nav ul li a {
+          text-decoration: none;
+          color: white; }
+
+/*fin header*/
+section {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px; }
+  section img {
+    opacity: 0.5;
+    max-width: 100%;
+    max-height: 100%; }
+    section img:hover {
+      opacity: 1;
+      border: white solid 1px; }
+  section div {
+    background-color: cornflowerblue;
+    align-content: center;
+    border-color: #8C0410;
+    border-style: solid;
+    border-radius: 19px; }
+  section h3 {
+    font-family: cursive;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center; }
+
+.cajauno {
+  background-color: green;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center; }
+  .cajauno h2 {
+    color: #8C0410; }
+  .cajauno p {
+    color: white; }
+
+.cajados {
+  background-color: crimson;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center; }
+  .cajados h2 {
+    color: #8C0410; }
+  .cajados p {
+    color: white; }
+
+@media screen and (max-width: 1024px) {
+  .contenedor_grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; } }
+
+@media screen and (max-width: 480px) {
+  .contenedor_grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr); }
+  .barra_navegacion {
+    flex-direction: column; } }
+
+footer {
+  font-size: 2rem;
+  background-color: gray;
+  padding: 20px; }
+  footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-size: x-large; }
