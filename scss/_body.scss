@@ -1,0 +1,29 @@
+$encabezados:(
+    cb:blue,
+    cr:crimson,
+    cv:green,
+    cn:black,
+    cbl: white,
+    cbor: #8C0410,
+    cac: cornflowerblue,
+    cg: gray
+
+);
+$cb: map-get($encabezados, cb);
+$cr: map-get($encabezados, cr);
+$cv: map-get($encabezados, cv);
+$cn: map-get($encabezados, cn);
+$cbl: map-get($encabezados, cbl);
+$cbor: map-get($encabezados, cbor);
+$cac: map-get($encabezados, cac);
+$cg: map-get($encabezados, cg);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $cn;
+    color: $cbl;
+}

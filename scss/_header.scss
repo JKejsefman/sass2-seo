@@ -1,0 +1,32 @@
+header{
+    background-color: $cb;
+        h1{
+            text-align: center;
+        }/*fin h1*/
+        nav{
+            background-color: $cg;
+            ul{
+                list-style: none;
+               /* barra_navegacion{*/
+                    display: flex;
+                    flex-direction: flex-row;
+                    justify-content: flex-end;
+                    li{
+                        padding: 15px;
+                        display: inline-block;
+                        /*flex_hijos{*/
+                            font-size: 1.5rem;
+                            background-color: $cr;
+                            margin: 5px;
+                            padding: 10px;
+                            border-radius: 10px;
+                                a{
+                                    text-decoration: none;
+                                    color: $cbl;
+                            } /*fin a*/
+                     /*   } /*fin flex*/  
+                    }/*fin li*/
+               /* }/*fin barra nav*/
+            }/*fin ul*/
+    }/*fin nav*/
+}/*fin header*/
